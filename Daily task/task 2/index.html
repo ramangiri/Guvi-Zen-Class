@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+
+    //create a request instance
+var req = new XMLHttpRequest();
+//initate connection
+req.open('GET','https://restcountries.eu/rest/v2/all',true);
+//sending the request
+req.send();
+//load the function (after data resieved)
+req.onload=function(){
+           var data=JSON.parse(this.response);
+           for(var i in data)
+           {
+           console.log(data[i].name)
+       }
+    };
+       Request.send();
+    
+</script>
+</html>
