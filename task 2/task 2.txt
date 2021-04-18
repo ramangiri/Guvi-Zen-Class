@@ -1,0 +1,54 @@
+1. Load the rest countries data using your html and script.js file and run a for loop on the data and print all the country name in the console. 
+
+Js:
+
+
+var request = new XMLHttpRequest();
+request.open('GET','https://restcountries.eu/rest/v2/all',true);
+request.send();
+request.onload = function(){
+    var data = JSON.parse(this.response);
+    var count = 0;
+    for(var i=0;i<data.length;i++)
+    {
+        count += data[i].population;
+    }
+    console.log(count);
+}
+
+
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest API class</title>
+</head>
+<body>
+<script src='script1.js'></script>
+</body>
+</html>
+
+
+
+
+
+
+2. Give a write up on Difference between copy by value and copy by reference.
+
+All primitive data types are copy by value	All composite datatypes are copy by reference
+
+
+
+
+
+
+3. How to copy by value a composite datatype (array+objects).
+Var objA = {a:1}
+Var objB= objA;
+objA = {a:2};
+objB.a;
