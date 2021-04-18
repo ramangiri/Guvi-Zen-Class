@@ -1,13 +1,2 @@
 # Guvi-Zen-Class
 
-
-TASK 1
-
-Do a write up for the followings:? 
-1. Difference between HTTP1.1 vs HTTP2 
-
-2. http version history 
-
-3. List 5 difference between Browser JS(console) vs Nodejs 
-
-4. what happens when you type a URL in the address bar in the browser?
